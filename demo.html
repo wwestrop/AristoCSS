@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Exo|Noto+Sans|Open+Sans|Roboto" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" />
+	<link href="presentation.css" rel="stylesheet" />
+</head>
+<body>
+
+	<h1>Dropdowns</h1>
+	<label for="selectBox">Select an option</label>
+	<select id="selectBox">
+		<option value="visa">Visa</option>
+		<option value="mastercard">Mastercard</option>
+		<option value="amex">American Express</option>
+		<option value="paypal">Paypal</option>
+		<option value="giftvoucher">Prepaid gift voucher</option>
+	</select>
+
+	<br /><br />
+
+	<label for="countyInput">County</label>
+	<input id="countyInput" list="countylist" type="text" />
+	<datalist id="countylist">
+		<option value="Bedfordshire" />
+		<option value="Berkshire" />
+		<option value="Bristol" />
+		<option value="Buckinghamshire" />
+		<option value="Cambridgeshire" />
+		<option value="Cheshire" />
+		<option value="City of London" />
+		<option value="Cornwall" />
+		<option value="County Durham" />
+		<option value="Cumbria" />
+		<option value="Derbyshire" />
+		<option value="Devon" />
+		<option value="Dorset" />
+		<option value="East Riding of Yorkshire" />
+		<option value="East Sussex" />
+		<option value="Essex" />
+		<option value="Gloucestershire" />
+		<option value="Greater London" />
+		<option value="Greater Manchester" />
+		<option value="Hampshire" />
+		<option value="Herefordshire" />
+		<option value="Hertfordshire" />
+		<option value="Isle of Wight" />
+		<option value="Kent" />
+		<option value="Lancashire" />
+		<option value="Leicestershire" />
+		<option value="Lincolnshire" />
+		<option value="Merseyside" />
+		<option value="Norfolk" />
+		<option value="North Yorkshire" />
+		<option value="Northamptonshire" />
+		<option value="Northumberland" />
+		<option value="Nottinghamshire" />
+		<option value="Oxfordshire" />
+		<option value="Rutland" />
+		<option value="Shropshire" />
+		<option value="Somerset" />
+		<option value="South Yorkshire" />
+		<option value="Staffordshire" />
+		<option value="Suffolk" />
+		<option value="Surrey" />
+		<option value="Tyne and Wear" />
+		<option value="Warwickshire" />
+		<option value="West Midlands" />
+		<option value="West Sussex" />
+		<option value="West Yorkshire" />
+		<option value="Wiltshire" />
+		<option value="Worcestershire" />
+	</datalist>
+
+	<br /><br /><br />
+
+	<h1>Textboxes</h1>	
+	<label for="address" type="text">Address</label>
+	<input type="text" id="address" value="62 West Wallaby Street" style="width: 250px" />
+
+	<br /><br />
+
+	<input id="searchBox" type="text" class="search" value="Type to search..."/>
+
+	<br /><br /><br />
+
+	<h1>Push buttons</h1>
+
+	<input type="button" value="Add to cart" />
+
+	<input type="button" class="primary" value="Primary" />
+
+	<input type="button" id="disabledButton" value="Disabled" disabled />
+
+	<br /><br /><br />
+
+	<h1>Radio buttons</h1>
+
+	<form>
+		<input type="radio" name="rgrp1" id="r1" checked /><label for="r1">Group my order into as few deliveries as possible<checkmark /></label>
+		<input type="radio" name="rgrp1" id="r2" /><label for="r2">Deliver each item in my order as soon as possible<checkmark /></label>
+		<input type="radio" name="rgrp1" id="r3" /><label for="r3">I will collect my order in person<checkmark /></label>
+	</form>
+
+	<pre>&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"radio"</span> <span class="attr">name</span>=<span class="value">"rgrp1"</span> <span class="attr">id</span>=<span class="value">"r1"</span> <span class="attr">checked</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"r1"</span>&gt;Radio tem 1&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"radio"</span> <span class="attr">name</span>=<span class="value">"rgrp1"</span> <span class="attr">id</span>=<span class="value">"r2"</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"r2"</span>&gt;Radio Item 2&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"radio"</span> <span class="attr">name</span>=<span class="value">"rgrp1"</span> <span class="attr">id</span>=<span class="value">"r3"</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"r2"</span>&gt;Radio Item 3&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;</pre>
+
+	<br /><br /><br />
+
+
+
+	<h1>Checkboxes</h1>
+
+	<form>
+	<input type="checkbox" name="chkgrp1" id="c1" /><label for="c1">Add 1 year warranty: (&pound;39.99)<checkmark /></label>
+	<input type="checkbox" name="chkgrp1" id="c2" checked /><label for="c2">Add a donation to our foundation (&pound;1.00)<checkmark /></label>
+	<input type="checkbox" name="chkgrp1" id="c3" /><label for="c3">Add tracking and insurance to my delivery (&pound;6.99)<checkmark /></label>
+	<input type="checkbox" name="chkgrp1" id="c4" /><label for="c4">Don't not leave this box unchecked if you don't want to not subscribe to our <strike>spam</strike> newsletter<checkmark /></label>
+	</form>
+
+	<pre>&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"checkbox"</span> <span class="attr">name</span>=<span class="value">"chkp1"</span> <span class="attr">id</span>=<span class="value">"c1"</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"c1"</span>&gt;Checkbox 1&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"checkbox"</span> <span class="attr">name</span>=<span class="value">"chkp1"</span> <span class="attr">id</span>=<span class="value">"c2"</span> <span class="attr">checked</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"c2"</span>&gt;Checkbox 2&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"checkbox"</span> <span class="attr">name</span>=<span class="value">"chkp1"</span> <span class="attr">id</span>=<span class="value">"c3"</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"c3"</span>&gt;Checkbox 3&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;
+&lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="value">"checkbox"</span> <span class="attr">name</span>=<span class="value">"chkp1"</span> <span class="attr">id</span>=<span class="value">"c4"</span> /&gt;&lt;<span class="tag">label</span> <span class="attr">for</span>=<span class="value">"c4"</span>&gt;Checkbox 4&lt;<span class="tag">checkmark</span> /&gt;&lt;/<span class="tag">label</span>&gt;</pre>
+
+
+	<br /><br />
+
+</body>
+</html>
