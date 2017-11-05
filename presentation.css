@@ -20,6 +20,10 @@ pre .tag {
 	color: #800;
 }
 
+pre .comment {
+	color: #080;
+}
+
 body {
 	padding: 20px;
 	font-family: 'Noto Sans', sans-serif;
