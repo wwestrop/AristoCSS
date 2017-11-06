@@ -87,7 +87,17 @@ input[type="button"] {
 		box-shadow: rgba(255, 255, 255, 0.7) 0px 1px inset;
 		border-color: #7693A9;
 		background: linear-gradient(0deg, #81bdea, #b0defe);
-		// TODO: the primary doesn't have the hover/active/disabled states
+
+		&:hover {
+			background: linear-gradient(0deg, #a5c8e2, #c9e8fe);
+			box-shadow: rgba(255, 255, 255, 0.7) 0px 1px inset, 0px 0px 8px -1px rgba(79, 176, 239, 0.44);
+			border-color: #7693A9;
+		}
+
+		&:active {
+			background: linear-gradient(0deg, #81bdea, #b0defe);
+			box-shadow: rgba(255, 255, 255, 0.7) 0px 1px inset, 0px 0px 8px -1px rgba(79, 176, 239, 0.44);
+		}
 	}
 }
 
