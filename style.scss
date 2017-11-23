@@ -185,18 +185,21 @@ input[type="radio"]:checked + label {
 	border-radius: 15px;
 	border-color: #7693A9;
 	background: linear-gradient(0deg, #a5c8e2, #c9e8fe);
-}
 
-input[type="radio"]:checked + label > checkmark {
-	background-color: #4e728f;
-	display: block;
-	width: 7px;
-	height: 7px;
-	position: relative;
-	top: -11px;
-	left: 4px;
-	border-radius: 7px;
-	box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px inset, rgba(255, 255, 255, 0.4) 1px 1px 1px;
+	&::before {
+		content: '';
+		background-color: #4e728f;
+		display: block;
+		width: 7px;
+		height: 7px;
+		position: relative;
+		top: 4px;
+		left: 4px;
+		border-radius: 7px;
+		box-shadow: rgba(0, 0, 0, 0.7) 0px 1px 2px 0px inset, rgba(255, 255, 255, 0.4) 1px 1px 1px;
+		float: left;
+		margin-right: -7px;
+	}
 }
 
 
